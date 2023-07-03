@@ -1,0 +1,13 @@
+.popup__btn-save {
+    color: #FFF;
+    background: #000;
+    border-radius: 2px;
+    border: none;
+    padding: 14px 0;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.popup__btn-save:hover {
+    background: #2e2e2e;
+}

@@ -1,0 +1,15 @@
+.elements__btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.elements__btn:hover {
+    opacity: 0.6;
+}
+
+.elements__btn:active svg {
+    fill: #000;
+}

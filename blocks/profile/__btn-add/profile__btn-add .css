@@ -1,0 +1,11 @@
+.profile__btn-add {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.profile__btn-add:hover {
+    opacity: 0.6;
+}
