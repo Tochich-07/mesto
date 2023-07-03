@@ -6,8 +6,15 @@
     padding: 14px 0;
     cursor: pointer;
     transition: all .3s ease;
+    font-size: 18px;
 }
 
 .popup__btn-save:hover {
     background: #2e2e2e;
+}
+
+@media screen and (max-width: 470px) {
+    .popup__btn-save {
+        font-size: 14px;
+    }
 }
