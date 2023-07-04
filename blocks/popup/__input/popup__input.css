@@ -2,7 +2,12 @@
     border: none;
     width: 358px;
     padding-bottom: 13px;
+    margin-bottom: 57px;
     border-bottom: 1px solid rgba(000, 0, 0, .2);
+}
+
+.popup__input:last-child {
+    margin-bottom: 48px;
 }
 
 @media screen and (max-width: 470px) {

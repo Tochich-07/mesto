@@ -9,3 +9,10 @@
       margin-bottom: 36px;
     }
 }
+
+@media screen and (max-width: 785px) {
+  .profile__info {
+   
+    margin-bottom: 28px;
+  }
+}

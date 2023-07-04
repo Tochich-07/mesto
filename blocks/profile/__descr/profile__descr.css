@@ -5,10 +5,18 @@
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
+    text-overflow: inherit;
+    white-space: nowrap;
 }
 
 @media screen and (max-width: 785px) {
     .profile__descr {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .profile__descr {
+        font-size: 14px;
     }
 }

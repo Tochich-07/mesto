@@ -7,10 +7,12 @@
     cursor: pointer;
     transition: all .3s ease;
     font-size: 18px;
+    line-height: normal;
+    font-weight: 400;
 }
 
 .popup__btn-save:hover {
-    background: #2e2e2e;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 @media screen and (max-width: 470px) {

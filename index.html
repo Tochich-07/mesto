@@ -6,29 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pages/index.css">
-    <title>Mesto</title>
+    <title>Место</title>
 </head>
 
 <body class="page">
+    <header class="header">
+        <img src="images/logo.svg" alt="Фото логотипа" class="logo">
+    </header>
     <main>
-        <header class="header">
-            <img src="images/logo.svg" alt="Фото логотипа" class="logo">
-        </header>
         <section class="profile">
             <div class="profile__info">
                 <img src="images/avatar.png" alt="Фото аватара" class="profile__img">
                 <div class="profile__block-descr">
-                    <p class="profile__name">Жак-Ив Кусто</p>
-                    <button class="profile__btn-edit">
-                        <img src="images/Edit-Button.svg" alt="Кнопка Редактировать">
-                    </button>
+                    <h1 class="profile__name">Жак-Ив Кусто</h1>
+                    <button type="button" class="profile__btn-edit"></button>
                     <p class="profile__descr">Исследователь океана</p>
                 </div>
-             
             </div>
-            <button class="profile__btn-add">
-                <img src="images/Add-Button.svg" alt="Кнопка Добавить">
-            </button>
+            <button type="button" class="profile__btn-add"></button>
         </section>
         <section class="elements">
             <ul class="elements__grid">
@@ -36,75 +31,60 @@
                     <img class="elements__img" src="images/karachaevsk.png" alt="Фото Карачаевска">
                     <div class="elements__info">
                         <h2 class="elements__heading">Карачаевск</h2>
-                        <button class="elements__btn">
-                       <img src="images/Group.svg" alt="Кнопка Лайка">
-                        </button>
+                        <button type="button" class="elements__btn"></button>
                     </div>
                 </li>
                 <li class="elements__element">
                     <img class="elements__img" src="images/elbrus.png" alt="Фото эльбруса">
                     <div class="elements__info">
                         <h2 class="elements__heading">Гора Эльбрус</h2>
-                        <button class="elements__btn">
-                       <img src="images/Group.svg" alt="Кнопка Лайка">
-                        </button>
+                        <button type="button" class="elements__btn"></button>
                     </div>
                 </li>
                 <li class="elements__element">
                     <img class="elements__img" src="images/dombay.png" alt="Фото Домбая">
                     <div class="elements__info">
                         <h2 class="elements__heading">Домбай</h2>
-                        <button class="elements__btn">
-                       <img src="images/Group.svg" alt="Кнопка Лайка">
-                        </button>
+                        <button type="button" class="elements__btn"></button>
                     </div>
                 </li>
                 <li class="elements__element">
                     <img class="elements__img" src="images/elbrus.png" alt="Фото Эльбруса">
                     <div class="elements__info">
                         <h2 class="elements__heading">Гора Эльбрус</h2>
-                        <button class="elements__btn">
-                       <img src="images/Group.svg" alt="Кнопка Лайка">
-                        </button>
+                        <button type="button" class="elements__btn"></button>
                     </div>
                 </li>
                 <li class="elements__element">
                     <img class="elements__img" src="images/dombay.png" alt="Фото Домбая">
                     <div class="elements__info">
                         <h2 class="elements__heading">Домбай</h2>
-                        <button class="elements__btn">
-                       <img src="images/Group.svg" alt="Кнопка Лайка">
-                        </button>
+                        <button type="button" class="elements__btn"></button>
                     </div>
                 </li>
                 <li class="elements__element">
                     <img class="elements__img" src="images/karachaevsk.png" alt="Фото Карачаевска">
                     <div class="elements__info">
                         <h2 class="elements__heading">Карачаево-Черкессия</h2>
-                        <button class="elements__btn">
-                       <img src="images/Group.svg" alt="Кнопка Лайка">
-                        </button>
+                        <button type="button" class="elements__btn"></button>
                     </div>
                 </li>
             </ul>
         </section>
-        <section class="popup">
-            <form class="popup__container" action="#">
-                <button class="popup__close-btn">
-                  <img src="images/Close-btn.svg" alt="Кнопка закрыть">
-                </button>
-                <h3 class="popup__tittle">Редактировать профиль</h3>
-                <input class="popup__input popup__input_name" type="text" name="" id="">
-                <input class="popup__input popup__input_job" type="text">
-                <button class="popup__btn-save">Сохранить</button>
-            </form>
-        </section>
     </main>
     <footer class="footer">
-        <span class="footer__span">© 2020 Mesto Russia</span>
+        <p class="footer__span">© 2020 Mesto Russia</p>
     </footer>
-  
-    <script src="index.js"></script>
+    <section class="popup">
+        <form class="popup__container" action="#">
+            <button type="button" class="popup__close-btn"></button>
+            <h3 class="popup__tittle">Редактировать профиль</h3>
+            <input class="popup__input popup__input_type_name" type="text" name="Name">
+            <input class="popup__input popup__input_type_job" type="text" name="job">
+            <button type="submit" class="popup__btn-save">Сохранить</button>
+        </form>
+    </section>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>

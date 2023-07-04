@@ -10,4 +10,4 @@
 2. Добавить на сайт разилчных форм
 3. Добавить анимаций
 
-https://github.com/Tochich-07/mesto/index.html 
+https://tochich-07.github.io/mesto/ 

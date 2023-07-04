@@ -1,5 +1,11 @@
 .elements__btn {
+    width: 22px;
+    height: 19px;
     background: none;
+    background-image:url(../../../images/Group.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     border: none;
     padding: 0;
     cursor: pointer;
@@ -7,9 +13,10 @@
 }
 
 .elements__btn:hover {
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
-.elements__btn:active svg {
-    fill: #000;
+.elements__btn:active { 
+    opacity: 1;
+    background-image:url(../../../images/Union.svg);
 }
