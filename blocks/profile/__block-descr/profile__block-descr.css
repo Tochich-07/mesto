@@ -1,3 +1,5 @@
 .profile__block-descr {
+    display: grid;
+    grid-template-rows: 2fr;
     align-self: center;
 }

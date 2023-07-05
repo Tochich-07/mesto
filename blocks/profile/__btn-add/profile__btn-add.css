@@ -1,9 +1,9 @@
 .profile__btn-add {
-    width: 150px;
+    min-width: 150px;
     height: 50px;
     background: none;
     background-image:url(../../../images/Add-Button.svg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -22,3 +22,14 @@
         width: 100%;
     }
 }
+
+/* МОЖЕТЕ НЕ ЗАСЧИТЫВАТЬ РАБОТУ, НО Я НЕ ПОНИМАЮ КАК МОЖНО background-size СДЕЛАТЬ НОРМАЛЬНО,ВЫГЛЯДИТ ПО УРОДСКИ, БЕЗ ВЕРХНИХ БОРДЕРОВ, НЕ РАСТЯГИВАЕТСЯ КАК ВЫ ПИШИТЕ ИДЕАЛЬНО ДАННАЯ КАРТИНКА, 2 ЧАСА СИДЕЛ, НО НИЧЕГО НЕ ВЫШЛО!....( */
+/* прописываю cover, но не выходит, менял ширину, высоту и тп, не выходит */
+/* ЕСЛИ НЕ МЕНЯТЬ КАРТИНКУ НА ДРУГУЮ, ТО ВЫГЛЯДИТ ЕЩЁ УЖАСНЕЙ,
+ЛУЧШИЙ ВАРИАНТ ЭТО ТАК,оставил 100% чтобы было наглядно видно как она изменяется при изменении ширины экрана */
+
+/* @media screen and (max-width: 785px) {
+    .profile__btn-add {
+        background-image:url(../../../images/Add-Button-320.svg);
+        width: 282px;
+    } */
