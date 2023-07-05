@@ -10,20 +10,20 @@ let closeBtnPop = document.querySelector('.popup__close-btn');
 let popup = document.querySelector('.popup');
 
 openBtnPop.addEventListener('click', function(){
-    popup.classList.add('popup_opened')
+    popup.classList.add('popup_opened');
     nameInput.value =  nameElement.textContent;
     jobInput.value = jobElement.textContent;
 });
 
 closeBtnPop.addEventListener('click', function(){
-    popup.classList.remove('popup_opened')
+    popup.classList.remove('popup_opened');
 });
 
 function handleFormSubmit (evt) {
     evt.preventDefault(); 
-    nameElement.textContent = nameInput.value 
-    jobElement.textContent = jobInput.value 
-    popup.classList.remove('popup_opened')
+    nameElement.textContent = nameInput.value;
+    jobElement.textContent = jobInput.value; 
+    popup.classList.remove('popup_opened');
 };
 
 formElement.addEventListener('submit', handleFormSubmit); 

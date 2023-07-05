@@ -1,12 +1,16 @@
 .popup__input {
     border: none;
     width: 358px;
-    padding-bottom: 13px;
-    margin-bottom: 57px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    padding-bottom: 7px;
+    margin-bottom: 30px;
     border-bottom: 1px solid rgba(000, 0, 0, .2);
 }
 
-.popup__input:last-child {
+.popup__input:nth-child(2n) {
     margin-bottom: 48px;
 }
 
