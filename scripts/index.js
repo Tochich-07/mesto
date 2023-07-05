@@ -23,6 +23,7 @@ function handleFormSubmit (evt) {
     evt.preventDefault(); 
     nameElement.textContent = nameInput.value 
     jobElement.textContent = jobInput.value 
-}
+    popup.classList.remove('popup_opened')
+};
 
 formElement.addEventListener('submit', handleFormSubmit); 
