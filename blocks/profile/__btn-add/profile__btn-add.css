@@ -1,13 +1,14 @@
 .profile__btn-add {
     min-width: 150px;
     height: 50px;
-    background: none;
-    background-image:url(../../../images/Add-Button.svg);
-    background-size: cover;
+    background: #000;
+    background-image:url(../../../images/add-button.svg);
+    background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;
-    border: none;
+    border: 2px solid #fff;
     padding: 0;
+    flex-shrink: 0;
     cursor: pointer;
     transition: all .3s ease;
 }
@@ -18,18 +19,15 @@
 
 @media screen and (max-width: 785px) {
     .profile__btn-add {
-        background-image:url(../../../images/Add-Button-320.svg);
-        width: 100%;
+        width: 70%;
+        background-size: 20px;
     }
 }
 
-/* МОЖЕТЕ НЕ ЗАСЧИТЫВАТЬ РАБОТУ, НО Я НЕ ПОНИМАЮ КАК МОЖНО background-size СДЕЛАТЬ НОРМАЛЬНО,ВЫГЛЯДИТ ПО УРОДСКИ, БЕЗ ВЕРХНИХ БОРДЕРОВ, НЕ РАСТЯГИВАЕТСЯ КАК ВЫ ПИШИТЕ ИДЕАЛЬНО ДАННАЯ КАРТИНКА, 2 ЧАСА СИДЕЛ, НО НИЧЕГО НЕ ВЫШЛО!....( */
-/* прописываю cover, но не выходит, менял ширину, высоту и тп, не выходит */
-/* ЕСЛИ НЕ МЕНЯТЬ КАРТИНКУ НА ДРУГУЮ, ТО ВЫГЛЯДИТ ЕЩЁ УЖАСНЕЙ,
-ЛУЧШИЙ ВАРИАНТ ЭТО ТАК,оставил 100% чтобы было наглядно видно как она изменяется при изменении ширины экрана */
-
-/* @media screen and (max-width: 785px) {
+@media screen and (max-width: 400px) {
     .profile__btn-add {
-        background-image:url(../../../images/Add-Button-320.svg);
-        width: 282px;
-    } */
+        width: 100%;
+        background-size: 16px;
+    }
+}
+/* Вся проблема была в том,что нужно было не всю кнопку экспортировать, а только крестик, ну и.... */
