@@ -27,48 +27,16 @@
         </section>
         <section class="elements">
             <ul class="elements__grid">
-                <li class="elements__element">
-                    <img class="elements__img" src="images/karachaevsk.png" alt="Фото Карачаевска">
-                    <div class="elements__info">
-                        <h2 class="elements__heading">Карачаевск</h2>
-                        <button type="button" class="elements__btn"></button>
-                    </div>
-                </li>
-                <li class="elements__element">
-                    <img class="elements__img" src="images/elbrus.png" alt="Фото эльбруса">
-                    <div class="elements__info">
-                        <h2 class="elements__heading">Гора Эльбрус</h2>
-                        <button type="button" class="elements__btn"></button>
-                    </div>
-                </li>
-                <li class="elements__element">
-                    <img class="elements__img" src="images/dombay.png" alt="Фото Домбая">
-                    <div class="elements__info">
-                        <h2 class="elements__heading">Домбай</h2>
-                        <button type="button" class="elements__btn"></button>
-                    </div>
-                </li>
-                <li class="elements__element">
-                    <img class="elements__img" src="images/elbrus.png" alt="Фото Эльбруса">
-                    <div class="elements__info">
-                        <h2 class="elements__heading">Гора Эльбрус</h2>
-                        <button type="button" class="elements__btn"></button>
-                    </div>
-                </li>
-                <li class="elements__element">
-                    <img class="elements__img" src="images/dombay.png" alt="Фото Домбая">
-                    <div class="elements__info">
-                        <h2 class="elements__heading">Домбай</h2>
-                        <button type="button" class="elements__btn"></button>
-                    </div>
-                </li>
-                <li class="elements__element">
-                    <img class="elements__img" src="images/karachaevsk.png" alt="Фото Карачаевска">
-                    <div class="elements__info">
-                        <h2 class="elements__heading">Карачаево-Черкессия</h2>
-                        <button type="button" class="elements__btn"></button>
-                    </div>
-                </li>
+                <template id="card">
+                    <li class="elements__element">
+                        <img id="link-card" class="elements__img" alt="Фото Места">
+                        <button class="elements__del"></button>
+                        <div class="elements__info">
+                            <h2 id="name-card" class="elements__heading"></h2>
+                            <button type="button" class="elements__btn"></button>
+                        </div>
+                    </li>
+                </template>
             </ul>
         </section>
     </main>
@@ -80,11 +48,33 @@
             <form class="form" action="#" name="formProfile">
                 <button type="button" class="popup__close-btn"></button>
                 <h3 class="popup__title">Редактировать профиль</h3>
-                <input required placeholder="Введите имя" class="popup__input popup__input_type_name" type="text" name="Name">
-                <input required placeholder="Введите род деятельности" class="popup__input popup__input_type_job" type="text" name="job">
+                <input required placeholder="Введите имя" class="popup__input popup__input_type_name" type="text"
+                    name="Name">
+                <input required placeholder="Введите род деятельности" class="popup__input popup__input_type_job"
+                    type="text" name="job">
                 <button type="submit" class="popup__btn-save">Сохранить</button>
             </form>
-        </div>  
+        </div>
+    </section>
+    <section id="popup__add" class="popup">
+        <div class="popup__container">
+            <form class="form" action="#" name="formProfile">
+                <button id="popup__close-btn-id" type="button" class="popup__close-btn"></button>
+                <h3 class="popup__title">Новое место</h3>
+                <input id="input-place-heading" required placeholder="Название"
+                    class="popup__input popup__input_type_place" type="text" name="Place">
+                <input id="input-place-link" required placeholder="Ссылка на картинку"
+                    class="popup__input popup__input_type_link" type="text" name="link">
+                <button id="popup__btn-create" type="submit" class="popup__btn-save">Сохранить</button>
+            </form>
+        </div>
+    </section>
+    <section id="popup__img" class="popup">
+        <div id="img-container" class="popup__div">
+            <button id="pop-Img-Btn" type="button" class="popup__close-btn"></button>
+            <p class="popup__descr"></p>
+        </div>
+
     </section>
     <script src="scripts/index.js"></script>
 </body>
